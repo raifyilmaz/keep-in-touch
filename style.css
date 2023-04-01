@@ -1,212 +1,220 @@
-/********************************FIXED BUTTON*********************************/
-.fixed-button {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    width: 308px;
-    height: 68px;
-    background: url(../../careerpaths/images/button_bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 48px;
-    text-align: center;
-    z-index: 1;
-}
+body {
+    margin: 0;
+    padding: 0;
+  }
 
-.fixed-button a {
+.wrapperForm{
+    max-width: 1032px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    text-align: center;
-    padding: 16px;
-    gap: 24px;
-    width: 308px;
-    height: 68px;
+    gap: 86px;
     position: relative;
-    left: 76px;
-    bottom: 48px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    text-decoration: none;
-    color: white;
-
-}
-
-.fixed-button-a{
-    display: flex;
-    position: relative;
-    width: 50px;
-    height: 50px;
-    top: 10px;
-    left: 16px;
-    background-image: url(../../careerpaths/images/speaker.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.hidden-div {
-    display: none;
-    flex-direction: row !important;
-    align-items: center;
-    position: absolute;
     justify-content: center;
     align-items: center;
-    bottom: 120px;
-    left: 370px;
-    transform: translateX(-50%);
-    padding: 36px;
-    gap: 36px;
-    width: 722px;
-    height: 236px;
-    background: url(../../careerpaths/images/hidden-div_bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+#keepInTch{
+    background: url(./bg.png);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.fingerprintShield{
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.formHeading h2{
+    width: 368px;
+    height: 40px;
+
+    /* h2-32 */
+
+    font-family: 'Eudoxus Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+
+    /* light-gradient */
+
+    background: linear-gradient(170.73deg, #CEC8FF 0%, #9F8FFF 121.24%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* border-fill-color: transparent; */
+
+
+    /* Inside auto layout */
+
     flex: none;
     order: 0;
     flex-grow: 0;
+    margin-bottom: 10px;
+}
+
+.formHeading p{
     color: white;
-  }
-
-.hidden-div img{
-    position: relative;
-    left: -240px;
-}
-
-.hidden-div_content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     font-family: 'Eudoxus Sans';
-    font-style: normal;
-    gap: 16px;
-    position: relative;
-    width: 452px;
-    height: 180px;
-    left: 190px;
-    top: -155px;
-}
-
-.hidden-div_content h5{
-    font-weight: 700;
-    font-size: 20px;
-    color: #CEC8FF;
-    height: 24px;
-}
-
-.hidden-div_content h3{
-    font-weight: 700;
-    font-size: 18px;
-    height: 24px;
-    color: white;
-}
-
-.hidden-div_line{
-    width: 450px;
-    height: 0px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.hidden-div_content-details{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 0px;
-    /* gap: 36px; */
-    position: relative;
-    width: 450px;
-    height: 80px;
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.hidden-div_content-details p{
-    width: 138px;
-    height: 22px;
-    font-family: 'Eudoxus Sans';
-    position: relative;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    opacity: 0.7;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 0px;
+    width: 464px;
 }
-.appDeadline{
+
+form {
+    width: 416px;
+    /* border: 1px solid #ccc; */
+    /* padding: 20px; */
+    position: relative;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-family: 'Eudoxus Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="tel"], textarea {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
-    gap: 6px;
-    width: 164px;
-    height: 22px;    
+    padding: 16px 24px 16px 16px;
+    gap: 24px;
+    
+    width: 480px;
+    height: 54px;
+    
+    background: #2B2F4F;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    
+    /* Inside auto layout */
+    
     flex: none;
-    order: 0;
+    order: 1;
+    align-self: stretch;
     flex-grow: 0;
-}
 
-.appDeadline img{
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 20px;
-    height: 20px;
-    left: 0px;
-    top: -7px;
-}
-
-.h4Content{
-    width: 108px;
-    height: 22px;
-    font-weight: 700;
-    font-size: 16px;
+    color: white;
+    font-family: 'Eudoxus Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
     line-height: 22px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-.hidden-div_left{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0px 14px 0px 0px;
-    gap: 6px;
-    width: 188px;
-    height: 50px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.hidden-div_right{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: flex-start;
-    left: 30px;
-    top: -14px;
-    width: 226px;
-    height: 50px;
-    text-align: 0;
-    flex: none;
-    order: 1;
-    flex-grow: 1;
-
-}
-
-.fixed-button:hover .hidden-div {
-    display: block;
+    margin-top: 0px;
   }
 
-/*************************************************************************/
+  input[type="tel"]#phone-number{
+    position: absolute;
+    width: 400px;
+    top: 137px;
+    left: 80px;
+  }
+  
+  input[type="tel"]#phone-country-code {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 24px 16px 16px;
+    gap: 24px;
+    width: 70px;
+    height: 54px;
+    background: #2B2F4F;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+textarea {
+    height: 100px;
+}
+  
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-image: url(checkmarkInput.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    width: 22px;
+    height: 22px;
+}
+
+label[for="agree-to-share"]{
+    position: relative;
+    bottom: 30px;
+    left: 40px;
+    margin: 0;
+}
+button[type="submit"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 20px 16px 24px;
+    gap: 6px;
+    
+    width: 152px;
+    height: 54px;
+    
+    /* oak-purple-light */
+    
+    background: #7966F0;
+    border-radius: 62px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+    font-family: 'Eudoxus Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    border: none;
+}
+
+button[type="submit"]::after {
+    content: url(./btnPointerElement.svg);
+    
+}
+
+@media (min-width: 2000px){
+    .wrapperForm{
+        padding: 80px 0;
+    }
+}

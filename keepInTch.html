@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+</head>
+<body>
+    <!-- <section id="keepInTch">
+        <div class="wrapper">
+            <div class="keepInTch-content">
+                <h2><span>Let's keep in touch</span></h2>
+                <p>Subscribe to the mailing list and receive the latest updates</p>
+                
+                <form action="">
+                    <label for="email">E-mail Address *</label>
+                    <input type="email" name="email" id="email">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1" pattern="[+][0-9]{1,3}[0-9]{6,14}" required>
+                </form>
+            </div>
+        </div>
+    </section> -->
+
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Keep in Touch Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="keepInTch">
+        <div class="wrapperForm">
+            <div class="content-container">
+                <div class="formHeading">
+                    <h2>Keep in Touch</h2>
+                    <p>Subscribe to the mailing list and receive the latest updates</p>
+                </div>
+    
+                <form id="contact-form">
+                    <label for="email">E-mail Address *</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your mail" required>
+                    <br>
+                    
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone-country-code" name="phone-country-code" placeholder="+1" required>
+                    <input type="tel" id="phone-number" name="phone-number" placeholder="Number" required>
+                    <br>
+                    
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="John Do" name="name" required>
+                    <br>
+    
+                    <label for="how-we-met">How We Met</label>
+                    <textarea id="how-we-met" name="how-we-met" placeholder="Tell us our story"></textarea>
+                    <br>
+    
+                    <input type="checkbox" id="agree-to-share" name="agree-to-share" required>
+                    <label for="agree-to-share">By clicking this checkbox, you consent to receiving emails from this school or course</label>
+                    <br>
+    
+                    <button type="submit" id="submit-form">Subscribe</button>
+                </form>
+            </div>
+            <img src="./secureShield.png" class="fingerprintShield" alt="shield-with-fingerprint">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
